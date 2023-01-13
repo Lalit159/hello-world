@@ -1,20 +1,4 @@
-DOCTOR WALA:
-
-The Answer for your question is given below clearly
-
-From the question’s text, we can infer the following functional dependencies:
-
-{Doctor#, Patient#, Date}->{Diagnosis, Treat_code, Charge}
-{Treat_code}->{Charge}
-Because there are no partial dependencies, the given relation is in 2NF already. This however is not 3NF because the Charge is a nonkey attribute that is determined by another nonkey attribute, Treat_code. We must decompose further:
-
-R (Doctor#, Patient#, Date, Diagnosis, Treat_code)
-R1 (Treat_code, Charge)
-
-We could further infer that the treatment for a given diagnosis is functionally dependant, but we should be sure to allow the doctor to have some flexibility when prescribing cures
-
-
-knfdyushbfesjfygsdh
+sexy hai
 
 
 
